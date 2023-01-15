@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <script async src="script.js"></script>
+    <title>MovieIS</title>
+  </head>
+  <body>
+    <header>
+      <!----------------------------main slider------------------------------->
+      <div class="slider">
+        <div class="slide slide1">
+          <img src="images/slide1.png" class="main_slider_imgs" />
+          <img
+            class="play__btn first_trailer"
+            src="icons/icons8-circled-play-100.png"
+          />
+          <h2 class="movie_name first_trailer">Death On The Nile</h2>
+        </div>
+
+        <div class="slide slide2">
+          <img src="images/slide2.png" class="main_slider_imgs" />
+          <img
+            class="play__btn second_trailer"
+            src="icons/icons8-circled-play-100.png"
+          />
+          <h2 class="movie_name second_trailer">King Richard</h2>
+        </div>
+
+        <div class="slide slide3">
+          <img src="images/slide3.png" class="main_slider_imgs" />
+          <img
+            class="play__btn third_trailer"
+            src="icons/icons8-circled-play-100.png"
+          />
+          <h2 class="movie_name third_trailer">Top Gun: Maverick</h2>
+        </div>
+
+        <!-- <div class="main-arrows"> -->
+
+        <button class="slider__arrow slider__arrow--left">
+          <img src="icons/arrow-left-white.png" />
+        </button>
+        <button class="slider__arrow slider__arrow--right">
+          <img src="icons/arrow-right-white.png" alt="" />
+        </button>
+        <!-- </div> -->
+
+        <div class="search">
+          <input
+            type="text"
+            name="film_name_search"
+            placeholder="search for movie"
+            autocomplete="off"
+          />
+          <button type="submit" class="search_btn">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+      </div>
+      <!----------------------------navigation------------------------------->
+      <nav>
+        <a href="index.html"
+          ><img src="icons/logo.png" alt="logo" id="logo"
+        /></a>
+
+        <ul class="nav__links">
+          <li class="nav__item">
+            <img src="icons/icons8-tv-64.png" />
+            <a class="nav__link" href="#">TV</a>
+          </li>
+
+          <li class="nav__item">
+            <img src="icons/icons8-movie-projector-50.png" />
+            <a class="nav__link" href="#">Movies</a>
+          </li>
+
+          <li class="nav__item">
+            <img src="icons/icons8-tv-show-50.png" />
+            <a class="nav__link" href="#">TV Shows</a>
+          </li>
+
+          <li class="nav__item">
+            <img src="icons/icons8-popcorn-time-50.png" />
+            <a class="nav__link" href="#">Animation</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--hidden container for rendering info on new page, after clicking on movie poster-->
+    <div class="hidden"></div>
+
+    <!----------------------------container for searched movie's posetrs------------------------------->
+    <div class="searched_movies_container">
+      <div class="searched_movies"></div>
+    </div>
+
+    <!----------------------------little sliders------------------------------->
+    <div class="container_little_sliders">
+      <div class="little-container">
+        <div class="little-slider__header">
+          <p class="title_top_picks">Top Picks</p>
+          <a href="#hiddenSection1" class="seeAll__btn topPicks"
+            >See All &#8594;</a
+          >
+        </div>
+        <div class="parent_container">
+          <div class="top_picks"></div>
+        </div>
+      </div>
+
+      <div class="little-container">
+        <div class="little-slider__header">
+          <p class="title_fan_favorites">Fan Favorites</p>
+          <a href="#hiddenSection2" class="seeAll__btn favorites"
+            >See All &#8594;</a
+          >
+        </div>
+        <div class="parent_container2">
+          <div class="fan_favorites"></div>
+        </div>
+      </div>
+
+      <div class="little-container">
+        <div class="little-slider__header">
+          <p class="title_actors">Actors</p>
+          <a href="#hiddenSection3" class="seeAll__btn allActors"
+            >See All &#8594;</a
+          >
+        </div>
+        <div class="parent_container3">
+          <div class="actors"></div>
+        </div>
+      </div>
+      <div class="footer">
+        <button>Questions? Contact us.</button>
+        <button>Help Center</button>
+        <button>Corporate Information</button>
+        <button>Terms of Use</button>
+      </div>
+    </div>
+
+    <div class="hidden-section-top" id="hiddenSection1"></div>
+    <div class="hidden-section-favorites" id="hiddenSection2"></div>
+    <div class="hidden-section-actors" id="hiddenSection3"></div>
+
+    <!----------------------------footer------------------------------->
+  </body>
+</html>
